@@ -27,6 +27,8 @@ var winCount = 0;
 var lossCount = 0;
 
 //Functions
+
+//function that picks random value
 var takeRandom =  function(min, max){
 	return Math.floor(Math.random() * (max - min+ 1)) + min;
 }
@@ -50,8 +52,8 @@ var startGame = function(){
 	$('#targetPoints').html(targetPoints);
 	
 }
-
-var addValues = function(crystals){
+//funciton which adds the crystals together
+var addPoints = function(crystals){
 
 	currentPoints = currentPoints + crystals.value;
 
@@ -60,6 +62,7 @@ var addValues = function(crystals){
 	win();
 }
 
+//function that determines if player won or not, and if so alerts player
 var win = function(){
 
 	if(currentPoints > targetPoints){
@@ -83,21 +86,21 @@ var win = function(){
 
 
 
-//Click Process
+//Click Process/ denotes value to crystal
 $('#blue').click(function(){
-	addValues(crystals.blue);
+	addPoints(crystals.blue);
 });
 
 $('#red').click(function(){
-	addValues(crystals.red);
+	addPoints(crystals.red);
 });
 
 $('#yellow').click(function(){
-	addValues(crystals.yellow);
+	addPoints(crystals.yellow);
 });
 
 $('#green').click(function(){
-	addValues(crystals.green);
+	addPoints(crystals.green);
 });
 
 startGame();
