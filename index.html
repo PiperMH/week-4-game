@@ -7,6 +7,8 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class = "conatiner">
@@ -18,6 +20,7 @@
 	<div class =  "conatiner">
 	
 	<div class="row">
+	<!-- Panel for directions of game -->
 	<div class = "col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 				<div class="panel-heading">Directions</div>
@@ -37,18 +40,18 @@
 
 		<div class = "col-md-5 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Target Score</div>
+				<div class="panel-heading text-center">Target Score</div>
 				<div class="panel-body">
-			   		Panel content
+			   		<h2 class="text-center" id="targetPoints"></h2>
 				</div>
 			</div>
 		</div>
 
 		<div class = "col-md-5">
 			<div class="panel panel-default">
-				<div class="panel-heading">Your Score</div>
+				<div class="panel-heading text-center">Player Score</div>
 				<div class="panel-body">
-				    Panel content
+				    <h2 class="text-center" id="yourPoints">0</h2>
 				</div>
 			</div>
 		</div>
@@ -58,47 +61,42 @@
 
 		<div class = "col-md-3 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Win</div>
-				<div class="panel-body">
-			   		Panel content
+				<div class="panel-heading text-center">Win</div>
+				<div class="panel-body text-center">
+			   		<h2 class="text-center" id="win"></h2>
 				</div>
 			</div>
 		</div>
 
 		<div class = "col-md-3">
 			<div class="panel panel-default">
-				<div class="panel-heading">Losses</div>
-				<div class="panel-body">
-			   		Panel content
+				<div class="panel-heading text-center">Losses</div>
+				<div class="panel-body text-center">
+			   		<h2 class="text-center" id="loss"></h2>
 				</div>
 			</div>
 		</div>
 
 		<div class = "col-md-4">
+			<div class = row>
 			<div class="panel panel-default">
-				<div class="panel-heading">Crystals</div>
-				<div class="panel-body">
-			   		<a href="#" class="thumbnail">
-      				<img src="assets/images/blueC.png" alt="..." id = "blue"  width= "60px" height= "60px">
-    				</a>
+				<div class="panel-heading text-center">Crystals</div>
+				<div class="panel-body text-center">
+      				<img src="assets/images/blueC.png" id = "blue"  width= "60px" height= "60px">
 
-    				<a href="#" class="thumbnail">
-      				<img src="assets/images/greenC.png" alt="..." id = "green" width= "60px" height= "60px">
-    				</a>
-
-    				<a href="#" class="thumbnail">
-      				<img src="assets/images/redC.png" alt="..." id = "red" width= "60px" height= "60px">
-    				</a>
-
-    				<a href="#" class="thumbnail">
-      				<img src="assets/images/yellowC.png" alt="..." id = "yellow" width= "60px" height= "60px">
-    				</a>
-  				</div>
+      				<img src="assets/images/greenC.png" id = "green" width= "60px" height= "60px">
+    				  				
+      				<img src="assets/images/redC.png" id = "red" width= "60px" height= "60px">
+    				 				
+      				<img src="assets/images/yellowC.png" id = "yellow" width= "60px" height= "60px">
+    			</div>
 				</div>
+			</div>
 			</div>
 		</div>
 		
 	</div>
 
 </body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
