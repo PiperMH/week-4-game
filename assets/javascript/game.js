@@ -61,14 +61,18 @@ var addValues = function(crystals){
 }
 
 var win = function(){
-	
+
 	if(currentPoints > targetPoints){
+		alert("You Lost");
+
 		lossCount++;
 		$("#loss").html(lossCount);
 
 		startGame();
 
 	} else if (currentPoints === targetPoints){
+		alert("You Win");
+
 		winCount++;
 		$("#win").html(winCount);
 
